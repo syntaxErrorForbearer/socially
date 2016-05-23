@@ -1,0 +1,13 @@
+<!-- NgFor is a common directive which are globally available
+	the li attribute tells angular to create a li
+	element for each party using li element as a template /-->
+
+<div>
+	<ul>
+		<li *ngFor="let party of parties">
+			{{party.name}}
+			<p>{{party.description}}</p>
+			<p>{{party.location}}</p>
+		</li>
+	</ul>
+</div>
